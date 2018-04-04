@@ -1,0 +1,81 @@
+body {
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    box-sizing: border-box;
+    background-color: rgb(231, 227, 227);
+    font-family: 'Arial';
+}
+
+#mainContainer {
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px auto 0 auto;
+}
+
+.container {
+    flex: 1 1 30%;
+    height: 200px;
+    background-color: rgb(240, 65, 65);
+    margin: 5px;
+    border-radius: 15px;
+    transition: background-color, 1s;
+}
+
+.fadedBg {
+   opacity: 0;
+}
+
+#banner {
+    text-align: center;
+    padding: 30px;
+    background-color: rgb(206, 203, 203);
+    color: white;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+#banner span {
+    display: block;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+#banner span:nth-of-type(2) {
+    font-size: 40px;
+}
+
+#controller {
+    height: 40px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    border: none;
+    outline: none;
+    height: 100%;
+    background-color: transparent;
+    color: rgb(206, 203, 203);
+    text-transform: uppercase;
+    padding: 0 25px;
+    letter-spacing: 1.5px;
+}
+
+button:active {
+    background-color: rgb(206, 203, 203);
+    color: white;
+}
+
+.selected {
+    background-color: rgb(206, 203, 203);
+    color: white;
+}
+
+#controller > span {
+    margin: 0 95px;
+    color: rgb(64, 199, 64);
+    letter-spacing: 1.5px;
+}
